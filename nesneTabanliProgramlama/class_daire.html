@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+            <script>
+                // class personel{
+                //     constructor(uyeNo){
+                //         this.uyeNo= uyeNo;
+                //     }
+                   
+                // }  
+                
+                // //sınıftan nesne oluşturacam
+                // var oyuncu = new personel(1);
+                
+                // document.write("uye no: "+ oyuncu.uyeNo);
+                
+                class daire{
+                    constructor(yaricap){
+                        this.yaricap = yaricap;
+                    }
+                    alan(){return 3.14*this.yaricap*this.yaricap;}
+                    cevre(){return 2*3.14*this.yaricap;}
+                }
+                
+                var a = Number(prompt("a: "));
+                var b = new daire(a);
+                document.write("alan: "+b.alan()+"<br> "+ "çevre: "+b.cevre());
+                document.write("<br>");
+                
+                
+            </script>        
+    </body>
+</html>

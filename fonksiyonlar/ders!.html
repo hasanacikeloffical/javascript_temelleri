@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width = device-width,initial-scare=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            //değer döndürmeyen fonksiyon
+            // function welcome(){
+            //     document.write("welcome dunya");
+            //     alert("hasan açıkel");
+                
+            // }
+            // welcome();
+           //tek fonksiyonlu değer döndürmeyen
+           function welcome(ad){
+              document.write("merhaba" , " "  +ad+ "<br>");
+           }
+           welcome("hasan");
+           welcome("emre");
+           welcome("ali")
+           //çok fonksiyonlu değer döndürmeyen
+           function topla(a,b){
+            var topla = a+b;
+        document.write("toplam:"+topla ,"<br>");
+           }
+           
+           topla(11,12);
+           //değer döndüren fonksiyon
+           function kare(x){
+            return x*x;
+           }
+           document.write("kare:" +kare(3),"<br>");
+           document.write("kare:" + kare(54), "<br>");
+           //tek parametreli değer döndüren fonkisyon
+           function kup(y){
+            return y*y*y;
+           }
+           var sayi = Number(prompt("sayı:"));
+           alert("sayının küpü: "+ kup(sayi));
+           document.write("küp: " + kup(2),"<br>");
+           //çok parametreli değer döndüren fonksiyon
+           function carpma(c,d){
+            var carpma = c*d;
+            return carpma;
+            }
+            document.write("carpma: "+carpma(9,7));
+        </script>
+    </body>
+</html>

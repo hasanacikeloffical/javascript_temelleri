@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            class Ucgen{
+                static genislik = 0;
+                static yukseklik = 0;
+                alan(){return(this.genislik*this.yukseklik)/2;}
+            }
+            
+            var a = new Ucgen();
+            
+            a.genislik = Number(prompt("genişlik: "));
+            a.yukseklik = Number(prompt("yukseklik: "));
+            document.write(" ucgenin alanı: "+ a.alan());
+            
+        </script>
+    </body>
+</html>

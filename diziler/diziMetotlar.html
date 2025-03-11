@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            var sayilar = [1,6,5,7,8,9]; 
+            document.write("dizi: "+sayilar+"<br>"); 
+            document.write("eleman sayısı: "+sayilar.length+"<br>");
+            sayilar.sort(); //dizi elamanlarını alfabetik olarak sıralar
+            document.write("dizi: "+sayilar+"<br>");
+            sayilar.reverse(); //dizi elemanlarını ters çevirir
+            document.write(sayilar+"<br>");
+            sayilar.push("hasan"); //dizinin sonuna eleman ekler
+            document.write(sayilar+"<br>");
+            sayilar.unshift(" ali"); //dizinin başına elaman ekle
+            document.write(sayilar+"<br>");            
+            // sayilar.shift(); //dizinin ilk elemanını döndürür ve siler
+            document.write(sayilar.shift()+"<br>");
+            document.write(sayilar+"<br>");
+            sayilar.pop();
+            document.write(sayilar.pop()+"<br>");
+            document.write(sayilar);
+            
+        </script>
+    </body>
+</html>

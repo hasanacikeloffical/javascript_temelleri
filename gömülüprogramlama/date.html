@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            var an = new Date();
+            document.write(an+"<br>");
+            document.write(an.toLocaleString()+"<br>");
+            document.write(an.getDate(),"<br>");
+                    
+            var gun = an.getDate();
+            var ay = an.getMonth();
+            var yil = an.getFullYear();
+            var saat = an.getHours();
+            var dakika = an.getMinutes();
+            
+            //sayfaya tarih ve saat yazdırmak istiyorum
+            document.write("Tarih: "+gun+"/"+ay+"/"+yil+"  "+"Saat: "+saat+":"+dakika);
+            
+        </script>
+    </body>
+</html>

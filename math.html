@@ -5,18 +5,26 @@
     </head>
     <body>
         <script>
-            var a = 4.56;
-            document.write("PI: " + Math.PI,"<br>"); //Pi değerini veriyor
-            document.write(Math.E,"<br>"); //
-            document.write("kök= "+ Math.sqrt(a),"<br>"); //sayının kökünü verir
-            document.write(Math.max(153,34,2456,89,0),"<br>"); // sayıların en büyüğünü seçer ve bize gösterir
-            document.write(Math.pow(a,2), "<br>"); //sayının karesini alır
-            document.write(Math.pow(a,3), "<br>"); //sayının küpünü verir
-            document.write(Math.min(12,35,68,879), "<br>"); //sayının min değeri verir
-            document.write(Math.round(a), "<br>"); //sayıyı yuvarlatmayı sağlar
-            document.write(Math.floor(a), "<br>"); // sayıyı küçük tamsayıya yuvarlatır
-            document.write(math.ceil(a),"<br>");
+            var a = 4.56 , r = Number(prompt("r: "));
+             var alan = Math.PI * Math.pow(r, 2);
+             var cevre = 2 * Math.PI * r;
+                document.write("alan: " + alan, "<br>", "çevre: " + cevre, "<br>");
             
+            // document.write("PI: " + Math.PI,"<br>"); //Pi değerini veriyor
+            // document.write(Math.E,"<br>"); //
+            // document.write("kök= "+ Math.sqrt(a),"<br>"); //sayının kökünü verir
+            // document.write(Math.max(153,34,2456,89,0),"<br>"); // sayıların en büyüğünü seçer ve bize gösterir
+            // document.write(Math.pow(a,2), "<br>"); //sayının karesini alır
+            // document.write(Math.pow(a,3), "<br>"); //sayının küpünü verir
+            // document.write(Math.min(12,35,68,879), "<br>"); //sayının min değeri verir
+            // document.write(Math.round(a), "<br>"); //sayıyı yuvarlatmayı sağlar
+            // document.write(Math.floor(a), "<br>"); // sayıyı küçük tamsayıya yuvarlatır
+            // document.write(math.ceil(a),"<br>");
+            
+            
+            // yazım kurallarına dikkat et  
+                  
+               
         </script>
     </body>
 </html>

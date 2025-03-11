@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            var a = 23.456;
+            document.write(typeof(a)+"<br>");
+            a = a.toString(); //değeri string karaktere çevirir.
+            document.write(typeof(a)+"<br>");
+            var b = 16;
+            b = b.toExponential(); //üslü değerlere çevirir ve string değer olarak kabul eder
+            document.write(b+"<br>");
+            
+            var c = 24.56;
+            c = c.toFixed(1); //ondalıktan sonra iki karakter kalsın ve kalanlar yuvarlansın anlamına gelir. bu komut yuvarlama işlemi yapar. veri tipi de string döner.
+            document.write(c+"<br>");
+            
+            var d = 123.56;  
+            d = d.toPrecision(3);//değerin kaç karakterli görünmesini göstermeyi sağlar.
+            document.write(d+"<br>");
+            
+            var x = "112.56";
+            //  x = String(x); şeklinde string değere çevirebilirsin
+            document.write("<br>"+typeof(x)+"<br>");
+            x = Number(x);
+            document.write(typeof(x)+"<br>");
+            document.write(x+"<br>");
+            x = parseInt(x); // x değişkenini integer yapar 
+            document.write(x+"<br>"); 
+            x = parseFloat(x); // değeri ondalıklı şeklinde okur ve işler.
+            document.write(x); 
+            
+            
+            
+                
+        </script>
+    </body>
+</html>

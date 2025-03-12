@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <h1 id="manset">İlk Manşet</h1>
+        <p id="ilk"></p>
+        <p id="ikinci"></p>
+        <img src="backgroundtwo.png" id="one" onmouseover="bir()" onmouseout="iki()"> 
+        
+        <script>
+            document.getElementById("ilk").innerHTML = "<b>İlk Paragraf...<b>"; //innerHTML parametresinde çift tırnak içerisine html komutları ekleyebilirsin. 
+            document.getElementById("ikinci").innerText = "İkinci Paragraf...";//innerText parametresinde çift tırnak içerisine html komutları ekleyemezsin.
+            
+            document.getElementById("manset").innerHTML = "Yeni Manşet";
+            document.getElementById("manset").style.color = "red";
+            document.getElementById("manset").style.backgroundColor = "yellow";
+            document.getElementById("manset").style.fontSize = "30px";
+            document.getElementById("manset").style.padding = "10px";
+            document.getElementById("manset").style.border = "1px solid black";
+            document.getElementById("manset").style.borderRadius = "10px";
+            document.getElementById("manset").style.textAlign = "center";
+             
+            //özellik değiştirme
+            var one = document.getElementById("one");
+            
+            function bir(){
+                one.src = "backgroundthree.png";
+            }
+            function iki(){
+                one.src = "backgroundtwo.png";
+            }
+        </script>
+    </body>
+</html>

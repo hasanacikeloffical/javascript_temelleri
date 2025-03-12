@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <body>
+        <h2>Linkler</h2>
+        <a href="index.html">HomPage</a>
+        <a href="about.html">About</a>
+        <a href="setting.html">Setting</a>
+        <a href="test.html">test</a>
+        <h2>resimler</h2>
+        <img src="backgroundtwo.png" id="two">
+        <img src="backgroundthree.png" id="three">
+        <h2>form</h2>
+        <form name="test">
+            Ad: <input type="text"> <br> 
+            Soyad: <input type="text"> <br>
+            <input type="submit" value="tıkla" onclick="yaz()">
+            <input type="reset" value="sıfırla" >
+        </form>
+        <script>
+            //document dizileri
+            document.write("link sayısı: " + document.links.length + "<br>");
+            document.write("resim sayısı: " + document.images.length + "<br>");
+            document.write("form eleman sayısı: " + document.forms["test"].length + "<br>");
+            
+            function yaz(){
+                var test = document.forms["test"];
+                for (var i=0; i<test.length;i++)
+                   document.write(test.elemants[i].value + "<br>");
+                   }
+               
+            </script>
+    </body>
+</html>

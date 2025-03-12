@@ -21,8 +21,51 @@
             document.write(sayilar+"<br>");
             sayilar.pop();
             document.write(sayilar.pop()+"<br>");
-            document.write(sayilar);
+            document.write(sayilar+"<br>");
             
+            // dizinin ekrandan alıp okuma örneği
+            var h = new Array();
+            
+            var n = Number(prompt("n: "));
+            
+            for(var s=0; s<n; s++) 
+                h[s] = Number(prompt("h["+s+"]"));
+            document.write(h+"<br>");
+            
+            //n_adet sayının ortalaması
+            var k = new Array() , d = Number(prompt("d: "));
+            for(var g=0; g<d; g++)
+               
+                k[g] = Number(prompt("k["+g+"]"));
+               toplam = toplam + k[g];
+             
+               var toplam = 0, ort = 0;
+            for(var g=0; g<d; g++)
+             toplam = toplam + k[g];
+            document.write("toplam: "+toplam+"<br>");
+            document.write("ortalama: "+toplam/d+"<br>");
+            
+            //sayıların sıralaması
+            var sozel = new Array() , sayısal = new Array();
+            var m = Number(prompt("m sözel: "));
+            var n = Number(prompt("n sayısal: "));
+            for(var s=0; s<m; s++) 
+                sozel[s] = prompt("sozel["+s+"]");
+            for(var s=0; s<n; s++) 
+                sayısal[s] = Number(prompt("sayısal["+s+"]"));
+            sozel = sozel.sort();
+            sayısal = sayısal.sort();
+            
+            document.write("sözel değerler: "+sozel+"<br>");
+            document.write("sayısal değerler: "+sayısal+"<br>"); 
+            
+            //kelime sıralaması
+            var kelime = "";
+            kelime = prompt("kelime giriniz: ");
+            document.write(kelime.toUpperCase()+"<br>");
+            var boyut = kelime.length;
+            for(var t=0; t<boyut; t++)
+                document.write(kelime[t]+"<br>");
         </script>
     </body>
 </html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>İki sayının karesi</title>
+    </head>
+    <body>
+        <form>
+            Sayi: <input type="text" id="sayi"><br>
+            Karesi: <span id="sonuc"></span><br>
+            <input type="button" value="Hesapla" onclick="karesi()">
+        </form>
+        <script>
+            function karesi() {
+                var sayi = Number(document.getElementById("sayi").value);
+                sayi == "" ? alert("Lütfen bir sayı giriniz.") : sayi = Number(sayi) || sayi<=0 ? alert("Lütfen pozitif bir sayı giriniz: "): kare = sayi * sayi ; document.getElementById("sonuc").innerHTML = kare;   
+             }
+        </script>
+    </body>
+</html>

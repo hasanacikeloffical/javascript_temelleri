@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Veri Oku</title>
+    </head>
+    <body>
+        <form>
+            Ad: <input type="text"  id="ad"><br>
+            <input type="button" value="OK" onclick="yaz()">
+        </form>
+        <script>
+            function yaz() {
+                var ad = document.getElementById("ad").value;
+                alert("Merhaba " + ad);
+                
+            }
+        </script>
+    </body>
+</html>

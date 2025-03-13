@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>İki sayının toplamı</title>
+    </head>
+    <body>
+        <form>
+            a : <input type="text" id="a"><br>
+            b : <input type="text" id="b"><br>
+            Toplam: <span id="toplam"></span><br>
+            ortalama: <span id="ortalama"></span><br>
+            <input type="button" value="Toplam" onclick="topla()">
+            <input type="button" value="Ortalama" onclick="ortalama()">
+        </form>
+        <script>
+            function topla() {
+                var a = Number(document.getElementById("a").value);
+                var b = Number(document.getElementById("b").value);
+                var toplam = a + b;
+                document.getElementById("toplam").innerHTML = toplam;
+            }
+            function ortalama() {
+                var a = Number(document.getElementById("a").value);
+                var b = Number(document.getElementById("b").value);
+                var ortalama = (a + b) / 2;
+                
+                document.getElementById("ortalama").innerHTML = ortalama ;
+                
+                
+                
+               
+            }
+        </script>
+    </body>
+</html>

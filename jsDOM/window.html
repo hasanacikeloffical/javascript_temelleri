@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">  
+    </head>
+    <body onload="setTimeout(time,5000)">  
+        <input type="button" value="aç" onclick="pencere() , time()">
+        <br>
+        <script> 
+            function pencere() {
+                open("https://www.instagram.com/hasanacikeloffical/");
+                
+            }
+            
+            function time(){
+                alert("5 saniye oldu ");
+            }
+            // setTimeout(time, 5000),
+            //         clearTimeout(time)
+        </script>
+        <script>
+            var i = 0;
+            function sayı() {
+                document.getElementById("kutu").innerHTML = i;
+                i++;
+            }
+            setInterval(sayı, 1000);
+        </script>
+        <div id="kutu">Hasan Açıkel</div>
+    </body>
+</html>  

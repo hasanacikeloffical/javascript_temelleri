@@ -1,0 +1,7 @@
+yazım hataları : alert yerine ulert yazılması hata olarak kabul eder
+mantıksal hatalar: Buna örnek olarak işlem önceliği yapılması gerekmektedir
+kullanıcı hatası: 0 dan küçük ise hata verir ve bu tarz kontrol edilerek kullancıdan doğru veri almasını söyleyebilirsin
+
+kod yazımlarında çok fazla hatalar olmaktadır. 
+editörler bu hataları düzeltmen için senin uyarır
+

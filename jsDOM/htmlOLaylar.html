@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>HTML Olaylar</title>
     </head>
-    <body>
+    <body onload="selam() , tarih()" >
         <h1 id="idone">Başlık Metni</h1>
         <button type="button" onclick="document.getElementById('idone').style.color='red'">Tıkla</button>
         <br>
@@ -18,5 +18,28 @@
             }
             
         </script>
+        
+       <h4 onclick="this.innerHTML='Hasan'">Hasan Açıkel</h4> <!--h4 tagına tıklandığında onclick içeriğinde yazılan komuta çevirir. -->
+        <h5 onmouseover="this.innerHTML='Hasan Açıkel'" onmouseout="this.innerHTML='Mersin Üniversitesi'">Mersin Üniversitesi</h5> 
+        <!-- bu kullanımda mouse üzerine gidince yazılan komuta geçiyor-->
+         
+        <!-- <button onclick="tarih()">Tarih ne?</button> -->
+        <script>
+            function tarih(){ 
+            var an = new Date();
+            var yıl = an.getFullYear();
+            var ay = an.getMonth()+1;
+            var gün = an.getDate();
+            var tarih = "tarih: "+gün+"/"+ay+"/"+yıl;
+            document.getElementById("demo").innerHTML = tarih;
+            }
+        </script>
+        <script>
+            function selam() {
+                alert("Merhaba");
+            }
+        </script>
+        <p id="demo"></p>
     </body>
+   
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resim Büyütme</title>
+    <style>
+        /* Küçük resim */
+        .thumbnail {
+            width: 200px;
+            cursor: pointer;
+        }
+
+        /* Arkaplanı kaplayan modal */
+        .modal {
+            display: none;
+            /* Başta gizli */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Büyütülmüş resim */
+        .modal img {
+            max-width: 90vw;
+            max-height: 90vh;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Küçük gösterilen resim -->
+    <img src="yazilimone.jpg" alt="Resim" class="thumbnail" onclick="showModal(this.src)">
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img id="modalImage" src="" alt="Büyük Resim">
+    </div>
+
+    <script>
+        function showModal(src) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImage");
+            modal.style.display = "flex";
+            modalImg.src = src;
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
